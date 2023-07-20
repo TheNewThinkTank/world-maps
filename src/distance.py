@@ -5,7 +5,7 @@ from collections import namedtuple
 from math import asin, cos, radians, sin, sqrt
 
 
-def haversine(ϕ1, λ1, ϕ2, λ2):
+def haversine(ϕ1: float, λ1: float, ϕ2: float, λ2: float) -> float:
     earth_radius_km = 6371
 
     return 2 * earth_radius_km * asin(
@@ -16,13 +16,13 @@ def haversine(ϕ1, λ1, ϕ2, λ2):
     )
 
 
-def print_dist(loc_1, loc_2):
+def print_dist(loc_1: tuple[str, float, float], loc_2: tuple[str, float, float]) -> None:
     ϕ1, λ1 = radians(loc_1.x), radians(loc_1.y)
     ϕ2, λ2 = radians(loc_2.x), radians(loc_2.y)
     print(f"Distance between {loc_1.name} and {loc_2.name}: {haversine(ϕ1, λ1, ϕ2, λ2):.2f} km")
 
 
-def main():
+def main() -> None:
     Location = namedtuple("Location", "name x y")
 
     san_fran = Location("San Fransisco", 37.8, 122.4)
