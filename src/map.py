@@ -21,7 +21,7 @@ def map1():
     m.fillcontinents()
     m.drawmapboundary()
     plt.title("Quick basemap example")
-    plt.savefig('map1.png')
+    plt.savefig('figs/map1.png')
     plt.show()
 
 
@@ -30,7 +30,7 @@ def map2():
     m.fillcontinents(color=VERY_DARK_BLUE, lake_color=WHITE)  # blue continents, white lakes
     m.drawmapboundary(fill_color=WHITE)
     plt.title("Quick basemap example 2")
-    plt.savefig('map2.png')
+    plt.savefig('figs/map2.png')
     plt.show()
 
 
@@ -43,7 +43,7 @@ def map3():
     # m.shadedrelief()
     # m.bluemarble()
     plt.title("World rivers")
-    plt.savefig('map3.png')
+    plt.savefig('figs/map3.png')
     plt.show()
 
 
@@ -65,7 +65,7 @@ def map4():
     m.plot(xpt, ypt, 'go', label='Boulder')
     plt.title("Geo Plotting")
     plt.legend(loc=0)
-    plt.savefig('Houston_Texas.png')
+    plt.savefig('figs/Houston_Texas.png')
     plt.show()
 
 

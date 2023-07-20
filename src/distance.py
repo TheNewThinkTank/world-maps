@@ -33,8 +33,8 @@ def main():
     cornwall_uk = Location("Cornwall UK", 50.3, 5.1)
     cph = Location("Copenhagen DK", 55.7, 12.6)
 
-    print_dist(san_fran, ny)
-    print_dist(cph, bcn)
+    # print_dist(san_fran, ny)
+    print_dist(cph, cornwall_uk)
 
 
 if __name__ == "__main__":
