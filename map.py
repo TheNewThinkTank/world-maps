@@ -5,6 +5,13 @@ import numpy as np
 
 # https://matplotlib.org/basemap/
 
+m = Basemap(projection='mill', llcrnrlat=-60, urcrnrlat=90,
+            llcrnrlon=-180, urcrnrlon=180, resolution='c')
+
+WHITE = '#FFFFFF'
+VERY_DARK_BLUE = '#072b57'
+VIVID_CYAN = '#04BAE3'
+
 
 def map1():
     # Using the miller projection.
@@ -16,14 +23,6 @@ def map1():
     plt.title("Quick basemap example")
     plt.savefig('map1.png')
     plt.show()
-
-
-m = Basemap(projection='mill', llcrnrlat=-60, urcrnrlat=90,
-            llcrnrlon=-180, urcrnrlon=180, resolution='c')
-
-WHITE = '#FFFFFF'
-VERY_DARK_BLUE = '#072b57'
-VIVID_CYAN = '#04BAE3'
 
 
 def map2():
