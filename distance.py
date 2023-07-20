@@ -1,4 +1,4 @@
-"""_summary_x
+"""_summary_
 """
 
 from collections import namedtuple
